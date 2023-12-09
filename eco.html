@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/nav green.png" type="image/as">
+</head>
+<body>
+
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 12px;">
+    <a class="btn two" href="index.html" style="margin-bottom: 12px; background-color: #001446;">Home</a>
+    <a class="btn one" href="prescription.html">Prescription</a>
+    </div>
+
+
+<!-- Start Pationt INFO form  -->
+
+    <div class="ptInfoForm">
+        <div>
+            <label for="ptName">Patient Name</label>
+            <br>
+            <input type="text" name="" id="ptName" class="input">
+        </div>
+
+        <div>
+            <label for="ecoNumber">ECO Number</label>
+            <br>
+            <input type="text" name="" id="ecoNumber" class="input">
+        </div>
+
+        <div>
+            <label for="sonOrWife">Son/wife Of</label>
+            <br>
+            <input type="text" name="" id="sonOrWife" class="input">
+        </div>
+
+        <div>
+            <label for="age">Age</label>
+            <br>
+            <input type="number" name="" id="age" class="input">
+        </div>
+
+        <div>
+            <label for="sex">Gender</label>
+            <br>
+            <select name="" id="sex" class="input" style="height: 25px;">
+                <option value="">Female</option>
+                <option value="">Male</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="consultant">Consultant</label>
+            <br>
+            <textarea name="" id="consultant" cols="20" rows="1" class="input">DR MUTIULLAH</textarea>
+        </div>
+       
+    </div>
+<!-- Start Pationt INFO end  -->
+
+
+
+<!-- Start vitals info form -->
+
+<div class="ptVitalForm">
+    <div>
+        <label for="height">Height</label>
+        <br>
+        <input type="number" name="" id="height" class="input">
+    </div>
+
+    <div>
+        <label for="weight">Weight (KG's)</label>
+        <br>
+        <input type="number" name="" id="weight" class="input">
+    </div>
+
+    <div>
+        <label for="hr">HR</label>
+        <br>
+        <input type="text" name="" id="hr" class="input">
+    </div>
+</div>
+
+<!-- End vitals info form -->
+
+
+<!-- Green bar is here -->
+
+<div style="height: 50px; background-color: #CFE8E4; margin: 10px; border-radius: 5px;" ></div>
+
+<!-- Green bar is End -->
+
+
+
+<!-- Dimension box start is here -->
+
+<div class="dimensionParent">
+<!-- col One -->
+    <div class="dimensionChild">
+        <label for="dopler">Doppler</label>
+        <br>
+        <textarea name="" id="dopler" cols="30" rows="1" class="input">AO PG 10 mmHg</textarea>
+
+        <br><br>
+
+
+        <label for="colorDopler">Color Doppler</label>
+        <br>
+        <textarea name="" id="colorDopler" cols="30" rows="1" class="input"></textarea>
+    </div>
+
+<!-- col one end -->
+
+
+    <!-- col Two -->
+    <div class="dimensionChild">
+        <label for="aorticRoot">Aortic Root</label>
+        <br>
+        <input type="text" id="aorticRoot" class="input">
+<br><br>
+
+        <label for="annulus">Annulus AO/PV</label>
+        <br>
+        <input type="text" id="annulus" class="input">
+
+<br><br>
+
+        <label for="la">LA</label>
+        <br>
+        <input type="text" id="la" class="input">
+<br><br>
+
+
+        <label for="laArea">LA Area</label>
+        <br>
+        <input type="text" id="laArea" class="input">
+<br><br>
+
+
+        <label for="rv">RV</label>
+        <br>
+        <input type="text" id="rv" class="input">
+<br><br>
+
+
+        <label for="tapse">Tapse</label>
+        <br>
+        <input type="text" id="tapse" class="input">
+    </div>
+
+<!-- Col 2 end -->
+
+
+
+<!-- col 3 start  -->
+    <div class="dimensionChild">
+
+
+        <label for="lvisd">LVISD</label>
+        <br>
+        <input type="text" id="lvisd" class="input">
+<br><br>
+
+
+<label for="lvpwd">LVPWD</label>
+        <br>
+        <input type="text" id="lvpwd" class="input">
+<br><br>
+
+
+<label for="lvidd">LVIDD</label>
+        <br>
+        <input type="text" id="lvidd" class="input">
+<br><br>
+
+
+<label for="lvids">LVIDS</label>
+        <br>
+        <input type="text" id="lvids" class="input">
+<br><br>
+
+
+<label for="ef">EF</label>
+        <br>
+        <input type="text" id="ef" class="input">
+<br><br>
+
+
+<label for="fs">F.S</label>
+        <br>
+        <input type="text" id="fs" class="input">
+<br><br>
+    </div>
+
+<!-- col 3 End  -->
+
+
+<!-- Dimension box is end -->
+</div>
+
+
+<div id="lastBox">
+    <div class="lastBoxChild">
+        <label for="finalReprt">Report</label> <br>
+        <textarea name="" id="finalReprt" cols="95" rows="14">
+Normal aortic root.
+Normal aortic valve.
+Normal sized left atrium.
+Normal sized left ventricle with good systolic function. 
+Normal segmental wall motion analysis.
+Normal sized right ventricle with good systolic function.
+Normal other valve.
+Intact interatrial and interventricular septum.
+Normal pericardium.
+        </textarea>
+    </div>
+
+
+
+    <div class="lastBoxChild">
+        <label for="finalConclusion">Conclusion</label> <br>
+        <textarea name="" id="finalConclusion" cols="65" rows="14">
+            
+        </textarea>
+    </div>
+</div>
+
+<button id="ecobtn">DONE </button>
+<!-- → -->
+
+
+
+
+
+</body>
+
+<script defer src="app.js"></script>
+</html>

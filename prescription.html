@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prescription</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/nav purple.png" type="image/as">
+</head>
+<body>
+<!-- Nav bar -->
+
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 12px;">
+    <a class="btn two" href="index.html" style="margin-bottom: 12px; background-color: #001446;">Home</a>
+    <a class="btn two" href="eco.html">ECO Report</a>
+</div>
+
+<div id="prsc-parent">
+
+    <div id="prsc-child-1">
+
+<div style="display: flex; margin: 5px; justify-content: space-around; gap: 4px;">
+
+<div>
+    <label for="prsc-name">Name</label>
+    <br>
+    <input type="text" id="prsc-name" class="input">
+</div>
+
+
+<div>
+    <label for="prsc-SW">S/W off</label>
+<br>
+<input type="text" id="prsc-SW" class="input">
+</div>
+
+
+
+<div>
+    <label for="gender">Gender</label>
+    <br>
+    <select name="" id="gender" class="input">
+        <option value="Female">Female</option>
+        <option value="Male">Male</option>
+    </select>
+</div>
+
+</div>
+
+
+<div style="display: flex; margin: 5px; justify-content: space-around; gap: 4px; padding-top: 10px;">
+
+    
+    <div>
+        <label for="prsc-age">Age</label>
+    <br>
+    <input type="number" id="prsc-age" style="width: 50px;">
+    </div>
+
+    <div>
+        <label for="prsc-wheight">Wheight</label>
+    <br>
+    <input type="number" id="prsc-wheight" style="width: 50px;">
+    </div>
+
+    <div>
+        <label for="prsc-bp">BP</label>
+    <br>
+    <input type="number" id="prsc-bp" style="width: 50px;">
+    </div>
+
+    <div>
+        <label for="prsc-pulse">Pulse</label>
+    <br>
+    <input type="number" id="prsc-pulse" style="width: 50px;">
+    </div>
+
+    <div>
+        <label for="prsc-pulse">SPO<sub>2</sub></label>
+    <br>
+    <input type="number" id="prsc-pulse" style="width: 50px;">
+    </div>
+    
+    
+    
+    </div>
+
+    <div style="display: flex; margin: 5px; justify-content: space-around; gap: 4px; padding-top: 10px;">
+    <button class="btn-purple">ADD</button>
+</div>
+    
+
+
+
+
+
+
+<!-- Medicine add part start-->
+
+<div style="min-height: 150px; background-color: #f5eeff; margin: 10px; border-radius: 5px; padding: 10px;">
+
+
+<!-- row one -->
+<div style="display: flex; margin: 5px; justify-content: space-around; gap: 4px; padding-top: 20px;">
+
+    <div>
+        <label for="prsc-mdType">MD Type</label>
+        <br>
+        <select name="" id="prsc-mdType" class="input">
+            <option value="Tab">Tablet</option>
+            <option value="Cap">Capsule</option>
+            <option value="Inj">Injection</option>
+            <option value="Ointment">Ointment</option>
+            <option value="Cream">Cream</option>
+            <option value="Spray">Spray</option>
+            <option value="">Nill</option>
+        </select>
+    </div>
+
+
+    <div>
+        <label for="prsc-mdName">MD Name</label>
+        <br>
+        <input type="text" id="prsc-mdName" class="input">
+    </div>
+
+
+    <div>
+        <label for="prsc-mdQty">MD Quantity</label>
+        <br>
+        <input type="number" id="prsc-mdQty" class="input" min="0" max="9" pattern="[0-9]" style="width: 30px;">
+    </div>
+
+</div>
+
+
+<!-- Row 2 -->
+<div style="display: flex; margin: 5px; justify-content: space-around; gap: 4px; padding-top: 20px;">
+
+    <div>
+        <label for="prsc-mdTakeType">MD Take Type</label>
+    <br>
+    <select name="" id="prsc-mdTakeType" class="input">
+        <option value="روزانہ">روزانہ</option>
+        <option value="روزانہ صبح">روزانہ صبح</option>
+        <option value="صبح، شام">صبح، شام</option>
+        <option value="رات">رات</option>
+        <option value="ناشتہ سے قبل">ناشتہ سے قبل</option>
+        <option value="ضرورت کی صورت میں">ضرورت کی صورت میں</option>
+        <option value="درد کی صورت میں">درد کی صورت میں</option>
+        <option value="">Nill</option>
+    </select>
+    </div> 
+
+
+    <div>
+        <label for="prsc-mdTakeCondition">Before Meal</label>
+        <input type="checkbox" name="prsc-mdTakeCondition" id="" value="کھانے سے پہلے">
+    </div>
+
+    <div>
+        <label for="prsc-mdTakeCondition">After Meal</label>
+        <input type="checkbox" name="prsc-mdTakeCondition" id="" value="کھانے کے بعد">
+    </div>
+
+    <!--Row 2 end  -->
+</div>
+
+
+<!-- Row 3 -->
+<div style="display: flex; margin: 5px; justify-content: space-around; gap: 4px; padding-top: 20px;">
+
+<button class="btn-purple">ADD</button>
+
+    <!--Row 3 end  -->
+</div>
+
+
+
+
+<!-- Row 4 -->
+<div style="display: flex; margin: 5px; justify-content: space-around; gap: 4px; padding-top: 20px;">
+
+    <div>
+        <label for="prsc-clinincalFindings">Clinical Findings</label>
+        <br>
+        <textarea name="" id="prsc-clinincalFindings" cols="30" rows="13"></textarea>
+    </div>
+
+
+    <div>
+        <label for="prsc-investigations">Investigations</label>
+        <br>
+        <textarea name="" id="prsc-investigations" cols="30" rows="13"></textarea>
+    </div>
+    
+        <!--Row 4 end  -->
+    </div>
+
+
+
+
+    <!-- Row 5 -->
+<div style="display: flex; margin: 5px; justify-content: space-around; gap: 4px; padding-top: 20px;">
+
+<button class="btn-purple">ADD</button>
+    
+        <!--Row 5 end  -->
+    </div>
+
+
+<!-- Medicine add part end -->
+</div>
+
+
+
+<!-- Prsc child 0ne end -->
+    </div>
+
+    <div id="prsc-child-2"></div>
+</div>
+
+</body>
+</html>

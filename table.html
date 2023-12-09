@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Table</title>
+    <style>
+        *{
+          
+        }
+    </style>
+</head>
+<body>
+
+    <table style="width: 375px; border-collapse: collapse; margin: 20px;">
+        <!-- First Row -->
+        <tr style="height: 11.5px; border: 1px solid #000;">
+            <th colspan="6" style="border: 1px solid #000;">B/M MODE DIMENSION</th>
+            <th style="border: 1px solid #000;">DOPPLER</th>
+        </tr>
+
+        <!-- Rows 2 to 8 -->
+        <!-- Each row has 6 normal columns and the last column has rowspan="8" -->
+        <tr style="height: 11.5px; border: 1px solid #000;">
+            <th style="border: 1px solid #000;">Parameter</th>
+            <th style="border: 1px solid #000;">Normal</td>
+            <th style="border: 1px solid #000;">Result</th>
+            <th style="border: 1px solid #000;">Parameter</th>
+            <th style="border: 1px solid #000;">Normal</th>
+            <th style="border: 1px solid #000;">Result</th>
+            <td rowspan="8" style="border: 1px solid #000;">${#DOPPLER}</td>
+        </tr>
+
+        <tr style="height: 11.5px; border: 1px solid #000;">
+            <td style="border: 1px solid #000;">AORTIC ROOT</td>
+            <td style="border: 1px solid #000;">20-40 mm</td>
+            <td style="border: 1px solid #000;">${#}</td>
+            <td style="border: 1px solid #000;">LVISD</td>
+            <td style="border: 1px solid #000;">8-12 mm</td>
+            <td style="border: 1px solid #000;">${#}</td>
+        </tr>
+
+
+        <tr style="height: 11.5px; border: 1px solid #000;">
+            <td style="border: 1px solid #000;">ANNULUS AO/PV</td>
+            <td style="border: 1px solid #000;"></td>
+            <td style="border: 1px solid #000;">${#}</td>
+            <td style="border: 1px solid #000;">LVPWD</td>
+            <td style="border: 1px solid #000;">7-11 mm</td>
+            <td style="border: 1px solid #000;">${#}</td>
+        </tr>
+
+
+        <tr style="height: 11.5px; border: 1px solid #000;">
+            <td style="border: 1px solid #000;">LA</td>
+            <td style="border: 1px solid #000;">19-39 mm</td>
+            <td style="border: 1px solid #000;">${#}</td>
+            <td style="border: 1px solid #000;">LVIDD</td>
+            <td style="border: 1px solid #000;">36-56 mm</td>
+            <td style="border: 1px solid #000;">${#}</td>
+        </tr>
+
+
+        <tr style="height: 11.5px; border: 1px solid #000;">
+            <td style="border: 1px solid #000;">LA AREA</td>
+            <td style="border: 1px solid #000;"> cm<sup>2</sup></td>
+            <td style="border: 1px solid #000;">${#}</td>
+            <td style="border: 1px solid #000;">LVIDS</td>
+            <td style="border: 1px solid #000;">25-41 mm</td>
+            <td style="border: 1px solid #000;">${}</td>
+        </tr>
+
+
+        <tr style="height: 11.5px; border: 1px solid #000;">
+            <td style="border: 1px solid #000;">RV</td>
+            <td style="border: 1px solid #000;">7-25 mm</td>
+            <td style="border: 1px solid #000;">${#}</td>
+            <td style="border: 1px solid #000;">EF</td>
+            <td style="border: 1px solid #000;">(50-70)%</td>
+            <td style="border: 1px solid #000;">${#}</td>
+        </tr>
+
+        <tr style="height: 11.5px; border: 1px solid #000;">
+            <td style="border: 1px solid #000;">TAPSE</td>
+            <td style="border: 1px solid #000;"> mm</td>
+            <td style="border: 1px solid #000;">${#}</td>
+            <td style="border: 1px solid #000;">F.S</td>
+            <td style="border: 1px solid #000;">(29-37)</td>
+            <td style="border: 1px solid #000;">${#}</td>
+        </tr>
+        <!-- Rows 3 to 8 (similar structure) -->
+
+        <!-- Last Row -->
+        <tr style="height: 11.5px; border: 1px solid #000;">
+            <td colspan="6" style="border: 1px solid #000;">COLOR DOPPLER:</td>
+        </tr>
+    </table>
+
+</body>
+</html>
